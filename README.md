@@ -13,3 +13,4 @@ https://www.weatherapi.com/
 ![Telegram](Image/Telegram.png)
 
 I used Telegram to receive notifications. I created a bot that will send messages on telegram using BotFather. I also created a public channel and invited my bot into this channel to send weahter notifications for me. 
+
