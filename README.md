@@ -14,3 +14,14 @@ https://www.weatherapi.com/
 
 I used Telegram to receive notifications. I created a bot that will send messages on telegram using BotFather. I also created a public channel and invited my bot into this channel to send weahter notifications for me. 
 
+![Raining_Reminder_Telegram](Image/Raining_Reminder_Telegram.jpeg)
+
+This is the channel that I've created. In this case, the channel name is Freya_Kris. The text at the top ("Raining Reminder") is just for display purposes. To address my channel from Python, we need to use @Freya_Kris as a channel name.
+
+# Script Parameters
+At the beginning of main function, I have declared five variables. The first one is city, this variable is used to locate the city for weather forecast. It will be included in the API URL call. The second one is api, this is the api key from my weather.api account. BOT_API_KEY is the key I've got during the Telegram bot set up. CHANNEL_NAME is the name of the public channel I've created with @ at the beginning. In my case, it's @Freya_Kris.
+
+# How the script works
+requests.get(url, params=parameters) in the Get_Weather() function is the call to weatherapi. Then we get 24 pieces of hourly description of the weather forecast for the current day from 00:00 to 23:00. It will contain the word "rain", "shower" or "drizzle" if it's expected to rain. So we loop through the 24 pieces of hourly description(00:00-00:06 will be passed since I definitly will be outside that time ahahahah), if we find the indicated words for a certain clock(ex:07:00),  this clock (ex:07:00) will be included in the raining period. After we detected all the raining period - we make a request to the Telegram API asking to send a message indicating the raining period from our bot. That's it!
+
+# Scheduling the script to run daily
