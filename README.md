@@ -6,3 +6,7 @@ I started this project because, let's face it, my main reason for checking the w
 So, I thought, why not automate the process? Using a Python script, I can extract the most important info for me—today's rain periods—and get a notification every morning before I leave home. This way, I get a handy reminder to grab my umbrella without drowning in irrelevant details. Problem solved, and I stay dry!
 
 # Getting today's weather forecast
+![WeatherAPI](Image/Weather_API.png)
+https://www.weatherapi.com/
+
+# Set up a messenger to receive notifications
