@@ -30,3 +30,7 @@ https://www.pythonanywhere.com/
 For script hosting service, I chose PythonAnywhere because it is free. One thing worth noticing is to calculate the time gap between the server time and Hong Kong time(where I am). So I set the server time to 23:00 in order to make the telegram send me notification at 07:00.
 
 This is how the notification looks like:
+![Notification_Reminder_Showcase](Image/Notification_Reminder_Showcase.jpeg)
+
+This is how the channel looks like:
+![Telegram_Channel_Interface_Showcase](Image/Telegram_Channel_Interface_Showcase.jpeg)
