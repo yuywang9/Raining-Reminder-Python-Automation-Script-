@@ -25,3 +25,8 @@ At the beginning of main function, I have declared five variables. The first one
 requests.get(url, params=parameters) in the Get_Weather() function is the call to weatherapi. Then we get 24 pieces of hourly description of the weather forecast for the current day from 00:00 to 23:00. It will contain the word "rain", "shower" or "drizzle" if it's expected to rain. So we loop through the 24 pieces of hourly description(00:00-00:06 will be passed since I definitly will be outside that time ahahahah), if we find the indicated words for a certain clock(ex:07:00),  this clock (ex:07:00) will be included in the raining period. After we detected all the raining period - we make a request to the Telegram API asking to send a message indicating the raining period from our bot. That's it!
 
 # Scheduling the script to run daily
+https://www.pythonanywhere.com/
+![Python_Script_Scheduler](Image/Python_Script_Scheduler.png)
+For script hosting service, I chose PythonAnywhere because it is free. One thing worth noticing is to calculate the time gap between the server time and Hong Kong time(where I am). So I set the server time to 23:00 in order to make the telegram send me notification at 07:00.
+
+This is how the notification looks like:
