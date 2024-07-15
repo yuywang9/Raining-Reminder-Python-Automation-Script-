@@ -10,3 +10,6 @@ So, I thought, why not automate the process? Using a Python script, I can extrac
 https://www.weatherapi.com/
 
 # Set up a messenger to receive notifications
+![Telegram](Image/Telegram.png)
+
+I used Telegram to receive notifications. I created a bot that will send messages on telegram using BotFather. I also created a public channel and invited my bot into this channel to send weahter notifications for me. 
